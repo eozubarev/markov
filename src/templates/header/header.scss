@@ -1,0 +1,62 @@
+.header-page {
+    font-family: $NowieVremena;
+    &__container {
+        padding: 15px 40px 0px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__start {
+        opacity: 0;
+        &:hover {
+            color: $accentColor;
+        }
+        &._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+            transition: all 0.9s ease 0.4s;
+        }
+    }
+
+    &__end {
+    
+    }
+
+    &__nav {
+
+    }
+
+    &__ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0;
+        &._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+            transition: all 1s ease 0.4s;
+        }
+    }
+
+    &__li {
+        font-size: 18px;
+        margin-right: 35px;
+        transition: $transition;
+        cursor: pointer;
+        &:last-child {
+            margin-right: 0px;
+        }
+        &:hover {
+            color: $accentColor;
+        }
+    }
+
+    &__logo {
+        position: relative;
+        font-family: $slab-bold;
+        font-size: 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Slab-Bold';
+  src: url('../fonts/RodeqaSlab4F-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Slab-Light';
+  src: url('../fonts/RodeqaSlab4F.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NowieVremena';
+  src: url('../fonts/NowieVremena.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Markov';
+  src: url('../fonts/InternationalPalms.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+

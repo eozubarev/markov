@@ -1,0 +1,75 @@
+.banner {
+        opacity: 0;
+        transform: translate(0px, 40px);
+        &._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+            transition: all 1.1s ease 0.4s;
+        }
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 8px;
+        background-color: #833cfcc7;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+        min-height: 325px;
+        position: relative;
+        align-items: center;
+    }
+
+    &-left {
+        &__info {
+            height: 65px;
+            font-family: $slab-bold;
+            border: 1px solid black;
+            border-radius: 8px;
+            background-color: $accentColor;
+            text-transform: uppercase;
+            color: black;
+            font-size: 48px;
+            &.--first {
+                position: absolute;
+                transform: rotate(355deg);
+                top: 10px;
+                left: 30px;
+            }
+            &.--two {
+                position: absolute;
+                top: 85px;
+                left: 412px;
+            }
+            &.--third {
+                position: absolute;
+                transform: rotate(3deg);
+                top: 163px;
+                left: -35px;
+            }
+            &.--fourth {
+                position: absolute;
+                transform: rotate(358deg);
+                top: 258px;
+                left: 55px;
+            }
+        }
+    }
+
+    &-right {
+        &__text {
+            margin-right: 145px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+    }
+
+    &-gif {
+        position: absolute;
+        transform: rotate(90deg);
+        right: 95px;
+        top: 80px;
+        max-width: 300px;
+    }
+
+}

@@ -1,0 +1,46 @@
+.section-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 100px 0 45px;
+
+    &__container {
+        position: relative;
+        width: 520px;
+        margin: 0;
+    }
+    
+    &__title {
+        font-family: $slab-bold;
+        text-transform: uppercase;
+        font-size: 44px;
+        color: $accentColor;
+        cursor: pointer;
+        opacity: 0;
+        transform: translate(0px, -30px);
+        &._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+            transition: all 0.8s ease 0.4s;
+        }
+    }
+
+    &__info {
+        color: $accentColor;
+        font-size: 18px;
+        transition: $transition;
+        cursor: pointer;
+        opacity: 0;
+        transform: translate(0px, -20px);
+        &._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+            transition: all 1.3s ease 0.4s;
+        }
+        &:hover {
+            color: black;
+        }
+    }
+}
