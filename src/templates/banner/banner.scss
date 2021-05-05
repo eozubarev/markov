@@ -1,4 +1,5 @@
 .banner {
+        margin: 20px;
         opacity: 0;
         transform: translate(0px, 40px);
         &._active {
@@ -17,9 +18,15 @@
         min-height: 325px;
         position: relative;
         align-items: center;
+        @media(max-width: 992px) {
+            flex-direction: column;
+        }
     }
 
     &-left {
+        @media(max-width: 992px) {
+            margin-top: 20px;
+        }
         &__info {
             height: 65px;
             font-family: $slab-bold;
@@ -29,28 +36,55 @@
             text-transform: uppercase;
             color: black;
             font-size: 48px;
+            @media(max-width: 1260px) {
+                height: 55px;
+                font-size: 40px;
+            }
+            @media(max-width: 992px) {
+                position: inherit !important;
+                transform: rotate(0deg) !important;
+                height: 42px;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
             &.--first {
                 position: absolute;
                 transform: rotate(355deg);
                 top: 10px;
                 left: 30px;
+                @media(max-width: 1260px) {
+                    top: 18px;
+                    left: 50px;
+                }
             }
             &.--two {
                 position: absolute;
                 top: 85px;
                 left: 412px;
+                @media(max-width: 1260px) {
+                    top: 78px;
+                    left: 397px;
+                }
             }
             &.--third {
                 position: absolute;
                 transform: rotate(3deg);
                 top: 163px;
                 left: -35px;
+                @media(max-width: 1260px) {
+                    top: 150px;
+                    left: 3px;
+                }
             }
             &.--fourth {
                 position: absolute;
                 transform: rotate(358deg);
                 top: 258px;
                 left: 55px;
+                @media(max-width: 1260px) {
+                    top: 242px;
+                    left: 70px;
+                }
             }
         }
     }
@@ -61,6 +95,9 @@
             text-align: center;
             color: white;
             font-size: 20px;
+            @media(max-width: 992px) {
+                margin: 95px 0px 110px;
+            }
         }
     }
 
@@ -70,6 +107,10 @@
         right: 95px;
         top: 80px;
         max-width: 300px;
+        @media(max-width: 992px) {
+            right: 326px;
+            top: 292px;
+        }
     }
 
 }
