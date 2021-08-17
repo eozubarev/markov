@@ -1,0 +1,39 @@
+.portfolio {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    &__project {
+        cursor: pointer;
+        background-color: gray;
+        overflow: hidden;
+        width: 360px;
+        height: 200px;
+        border-radius: 6px;
+        position: relative;
+        &-name {
+            & p {
+                z-index: 5;
+                position: relative;
+                color: $white;
+                text-align: center;
+            }
+        }
+    }
+    & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("/images/portfolio/ekodar.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: $transition;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
